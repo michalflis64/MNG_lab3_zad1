@@ -1,0 +1,172 @@
+// class version 52.0 (52)
+// access flags 0x31
+public final class Main {
+
+  // compiled from: main.kt
+  // debug info: SMAP
+main.kt
+Kotlin
+*S Kotlin
+*F
++ 1 main.kt
+Main
++ 2 fake.kt
+kotlin/jvm/internal/FakeKt
+*L
+1#1,15:1
+1#2:16
+*E
+
+
+  @Lkotlin/Metadata;(mv={1, 6, 0}, k=1, xi=48, d1={"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0015\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0002J\u001b\u0010\u0007\u001a\u00020\u00042\u000c\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0009H\u0007\u00a2\u0006\u0002\u0010\u000b\u00a8\u0006\u000c"}, d2={"LMain;", "", "()V", "bubbleSort", "", "array", "", "main", "args", "", "", "([Ljava/lang/String;)V", "lab3_kotlin"})
+
+  // access flags 0x19
+  public final static LMain; INSTANCE
+  @Lorg/jetbrains/annotations/NotNull;() // invisible
+
+  // access flags 0x2
+  private <init>()V
+   L0
+    LINENUMBER 1 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    RETURN
+   L1
+    LOCALVARIABLE this LMain; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x19
+  public final static main([Ljava/lang/String;)V
+  @Lkotlin/jvm/JvmStatic;()
+    // annotable parameter count: 1 (invisible)
+    @Lorg/jetbrains/annotations/NotNull;() // invisible, parameter 0
+   L0
+    ALOAD 0
+    LDC "args"
+    INVOKESTATIC kotlin/jvm/internal/Intrinsics.checkNotNullParameter (Ljava/lang/Object;Ljava/lang/String;)V
+   L1
+    LINENUMBER 4 L1
+    RETURN
+   L2
+    LOCALVARIABLE args [Ljava/lang/String; L0 L2 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x12
+  private final bubbleSort([I)V
+   L0
+    LINENUMBER 7 L0
+    ICONST_0
+    ISTORE 2
+   L1
+    ALOAD 1
+    ARRAYLENGTH
+    ICONST_1
+    ISUB
+    ISTORE 3
+   L2
+   FRAME APPEND [I I]
+    ILOAD 2
+    ILOAD 3
+    IF_ICMPGE L3
+   L4
+    LINENUMBER 8 L4
+    ICONST_0
+    ISTORE 4
+   L5
+    ALOAD 1
+    ARRAYLENGTH
+    ILOAD 2
+    ISUB
+    ICONST_1
+    ISUB
+    ISTORE 5
+   L6
+   FRAME APPEND [I I]
+    ILOAD 4
+    ILOAD 5
+    IF_ICMPGE L7
+   L8
+    LINENUMBER 9 L8
+    ALOAD 1
+    ILOAD 4
+    IALOAD
+    ALOAD 1
+    ILOAD 4
+    ICONST_1
+    IADD
+    IALOAD
+    IF_ICMPLE L9
+   L10
+    LINENUMBER 10 L10
+    ALOAD 1
+    ILOAD 4
+    ALOAD 1
+    ILOAD 4
+    ICONST_1
+    IADD
+    IALOAD
+    ISTORE 6
+    ILOAD 6
+    ISTORE 7
+   L11
+    LINENUMBER 16 L11
+    ISTORE 10
+    ASTORE 9
+   L12
+    ICONST_0
+    ISTORE 8
+   L13
+    LINENUMBER 10 L13
+    ALOAD 1
+    ILOAD 4
+    ICONST_1
+    IADD
+    ALOAD 1
+    ILOAD 4
+    IALOAD
+    IASTORE
+   L14
+    GETSTATIC kotlin/Unit.INSTANCE : Lkotlin/Unit;
+    ASTORE 11
+    ALOAD 9
+    ILOAD 10
+   L15
+    LINENUMBER 10 L15
+    ILOAD 6
+    IASTORE
+   L9
+    LINENUMBER 8 L9
+   FRAME SAME
+    IINC 4 1
+    GOTO L6
+   L7
+    LINENUMBER 7 L7
+   FRAME SAME
+    IINC 2 1
+    GOTO L2
+   L3
+    LINENUMBER 14 L3
+   FRAME CHOP 2
+    RETURN
+   L16
+    LOCALVARIABLE $i$a$-also-Main$bubbleSort$1 I L13 L14 8
+    LOCALVARIABLE it I L12 L14 7
+    LOCALVARIABLE j I L5 L7 4
+    LOCALVARIABLE i I L1 L3 2
+    LOCALVARIABLE this LMain; L0 L16 0
+    LOCALVARIABLE array [I L0 L16 1
+    MAXSTACK = 5
+    MAXLOCALS = 12
+
+  // access flags 0x8
+  static <clinit>()V
+    NEW Main
+    DUP
+    INVOKESPECIAL Main.<init> ()V
+    PUTSTATIC Main.INSTANCE : LMain;
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 0
+}

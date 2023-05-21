@@ -1,0 +1,21 @@
+Różnice między bytecode'em wygenerowanym w Javie a tym wygenerowanym w Kotlinie:
+
+    Wersja klasy: W Javie wersja klasy to 64.0 (64), podczas gdy w Kotlinie to 52.0 (52). Oznacza to, że kod w Javie jest skompilowany do wersji Java 8 lub wyższej, podczas gdy kod w Kotlinie jest skompilowany do wersji Java 8 lub niższej.
+
+    Nazwa klasy: W Javie klasa nazywa się "main", a w Kotlinie "Main". Jest to różnica w konwencji nazewniczej.
+
+    Dostęp do klasy: W Javie klasa ma flagi dostępu 0x21, co oznacza, że jest publiczna i finalna. W Kotlinie klasa ma flagi dostępu 0x31, co oznacza, że jest publiczna i finalna.
+
+    Modyfikatory dostępu: W bytecode Javy mamy dostępne informacje o modyfikatorach dostępu dla klas i metod, takich jak "public" i "static". W przypadku bytecode Kotlinu takie informacje nie są dostępne wprost.
+
+    Metoda konstruktora: W Javie metoda konstruktora ma flagi dostępu 0x1 i nie ma zwracanego typu (void). W Kotlinie metoda konstruktora ma flagi dostępu 0x2 i również nie ma zwracanego typu.
+
+    Metoda bubbleSort: W Javie metoda bubbleSort ma flagi dostępu 0x9 i zwraca void. W Kotlinie metoda bubbleSort ma flagi dostępu 0x12 i nie zwraca niczego.
+
+    Informacje debugowania: Bytecode Kotlinu zawiera dodatkowe informacje debugowania, takie jak adnotacje "@Lkotlin/Metadata" i "@Lorg/jetbrains/annotations/NotNull", które mogą być używane przez narzędzia do analizy kodu Kotlinu. Bytecode Javy nie zawiera takich specyficznych informacji debugowania.
+
+    Inicjalizacja statycznego pola: W Kotlinie występuje metoda statyczna <clinit>, która inicjalizuje statyczne pole INSTANCE klasy Main.
+
+    Struktura metod: Sposób strukturyzowania metod w bytecode Javy i Kotlinu różni się nieco. Na przykład, w bytecode Javy sekcja lokalnych zmiennych jest opisana przez instrukcję "LOCALVARIABLE", natomiast w bytecode Kotlinu wykorzystywane są adnotacje lokalnych zmiennych, takie jak "@Lorg/jetbrains/annotations/NotNull;".
+
+Oprócz tych różnic, większość kodu bytecode'u jest podobna w obu przypadkach. Oba bytecode'y zawierają instrukcje załadowywania, zapisywania i manipulowania danymi, skoki warunkowe i pętle, oraz deklaracje lokalnych zmiennych i maksymalną liczbę stosu i lokalnych zmiennych dla danej metody.

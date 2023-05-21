@@ -1,0 +1,117 @@
+// class version 64.0 (64)  - Ta linijka komentarza wskazuje, że wersja bytecode'u jest 64.0.
+// access flags 0x21 - Ta linijka komentarza wskazuje na flagi dostępu. Wartość 0x21 oznacza, że klasa jest publiczna i finalna.
+public class main { - Linijka ta rozpoczyna deklarację klasy o nazwie "main". Klasa jest publiczna.
+
+  // compiled from: main.java - Linijka komentarza wskazuje na źródłowy plik, z którego została skompilowana klasa.
+
+  // access flags 0x1 - Ta linijka komentarza wskazuje na flagi dostępu do konstruktora. Wartość 0x1 oznacza, że konstruktor jest publiczny.
+  public <init>()V - Ta linijka definiuje konstruktor klasy. <init> to specjalna nazwa konstruktora w bytecode'u. "()V" oznacza, że konstruktor nie przyjmuje żadnych argumentów i nie zwraca żadnej wartości (jest typu "void").
+   L0 - Etykieta oznaczająca początek bloku kodu.
+    LINENUMBER 1 L0 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 1 w pliku źródłowym.
+    ALOAD 0 - Ta instrukcja bytecode'u wczytuje wartość zmienną lokalną o indeksie 0 na stos. W tym przypadku oznacza to wczytanie referencji do obiektu, na którym jest wywoływany konstruktor.
+    INVOKESPECIAL java/lang/Object.<init> ()V  Ta instrukcja bytecode'u wywołuje konstruktor klasy java.lang.Object. Jest to standardowe wywołanie konstruktora superklasy. Metoda <init> oznacza konstruktor, a "()V" oznacza, że nie przyjmuje argumentów i nie zwraca wartości.
+    RETURN - Ta instrukcja bytecode'u zwraca wartość z metody konstruktora i kończy jej wykonanie.
+   L1 - Etykieta oznaczająca kolejny blok kodu.
+    LOCALVARIABLE this Lmain; L0 L1 0 . - Ta linijka bytecode'u definiuje zmienną lokalną o nazwie "this" typu "main" (czyli typu klasy "main"). Zmienna lokalna ta ma zakres od etykiety L0 do etykiety L1 i ma indeks 0.
+    MAXSTACK = 1 - Ta linijka bytecode'u wskazuje na maksymalną głębokość stosu dla tej metody. W tym przypadku wynosi 1, co oznacza, że maksymalnie jedna wartość może być przechowywana na stosie.
+    MAXLOCALS = 1 - Ta linijka bytecode'u wskazuje na maksymalną liczbę zmiennych lokalnych dla tej metody. W tym przypadku wynosi 1, co oznacza, że w tej metodzie jest tylko jedna zmienna lokalna (zmienna "this").
+
+  // access flags 0x9 - Ta linijka komentarza wskazuje na flagi dostępu do metody. Wartość 0x9 oznacza, że metoda jest publiczna i statyczna.
+  public static bubbleSort([I)V - Ta linijka definiuje metodę o nazwie "bubbleSort" z argumentem typu "[I" (czyli tablicą liczb całkowitych) oraz bez wartości zwracanej (typ "void"). Metoda jest publiczna i statyczna.
+   L0 - Etykieta oznaczająca początek bloku kodu.
+    LINENUMBER 3 L0 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 3 w pliku źródłowym.
+    ALOAD 0 - Ta instrukcja bytecode'u wczytuje referencję do tablicy zmiennych lokalnych o indeksie 0 (pierwszy argument metody) na stos.
+    ARRAYLENGTH - Ta instrukcja bytecode'u pobiera długość wczytanej tablicy i umieszcza ją na stosie.
+    ISTORE 1 - Ta instrukcja bytecode'u zapisuje wartość ze stosu (długość tablicy) do zmiennej lokalnej o indeksie 1.
+   L1 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 4 L1 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 4 w pliku źródłowym.
+    ICONST_0 - Ta instrukcja bytecode'u umieszcza stałą wartość 0 na stosie.
+    ISTORE 2 - Ta instrukcja bytecode'u zapisuje wartość ze stosu (0) do zmiennej lokalnej o indeksie 2.
+   L2 - Etykieta oznaczająca kolejny blok kodu.
+   FRAME APPEND [I I] - Ta linijka bytecode'u wskazuje na stan stosu i zmiennych lokalnych w tym miejscu. "[I I" oznacza, że na stosie znajduje się tablica o typie "int" oraz dwie zmienne lokalne typu "int".
+    ILOAD 2 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 2 (0) na stos.
+    ILOAD 1 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 1 (długość tablicy) na stos.
+    ICONST_1 - Ta instrukcja bytecode'u umieszcza stałą wartość 1 na stosie.
+    ISUB - Ta instrukcja bytecode'u wykonuje odejmowanie na dwóch wartościach ze stosu (długość tablicy i 1) i umieszcza wynik na stosie.
+    IF_ICMPGE L3  - Ta instrukcja bytecode'u porównuje dwie wartości ze stosu (wartość z poprzedniego ISUB i wartość zmiennej lokalnej o indeksie 2). Jeśli pierwsza wartość jest większa lub równa drugiej, skacze do etykiety L3.
+   L4 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 5 L4 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 5 w pliku źródłowym.
+    ICONST_0  - Ta instrukcja bytecode'u umieszcza stałą wartość 0 na stosie.
+    ISTORE 3 - Ta instrukcja bytecode'u zapisuje wartość ze stosu (0) do zmiennej lokalnej o indeksie 3.
+   L5 - Etykieta oznaczająca kolejny blok kodu.
+   FRAME APPEND [I] - Ta linijka bytecode'u wskazuje na stan stosu i zmiennych lokalnych w tym miejscu. "[I" oznacza, że na stosie znajduje się tablica o typie "int".
+    ILOAD 3 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 3 (0) na stos.
+    ILOAD 1 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 1 (długość tablicy) na stos.
+    ILOAD 2 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 2 na stos.
+    ISUB - Ta instrukcja bytecode'u wykonuje odejmowanie na dwóch wartościach ze stosu (długość tablicy i wartość zmiennej lokalnej 2) i umieszcza wynik na stosie.
+    ICONST_1 - Ta instrukcja bytecode'u umieszcza stałą wartość 1 na stosie.
+    ISUB - Ta instrukcja bytecode'u wykonuje odejmowanie na dwóch wartościach ze stosu (wynik poprzedniego odejmowania i 1) i umieszcza wynik na stosie.
+    IF_ICMPGE L6 - Ta instrukcja bytecode'u porównuje dwie wartości ze stosu (wynik poprzedniego odejmowania i wartość zmiennej lokalnej 3). Jeśli pierwsza wartość jest większa lub równa drugiej, skacze do etykiety L6.
+   L7 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 6 L7 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 6 w pliku źródłowym.
+    ALOAD 0 - Ta instrukcja bytecode'u wczytuje referencję do tablicy zmiennych lokalnych o indeksie 0 (pierwszy argument metody, czyli tablica) na stos.
+    ILOAD 3 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 3 na stos.
+    IALOAD - Ta instrukcja bytecode'u wczytuje wartość z tablicy na podstawie indeksu (wartość ze stosu) i umieszcza ją na stosie. W tym przypadku oznacza to wczytanie elementu z tablicy o indeksie wskazywanym przez wartość zmiennej lokalnej 3.
+    ALOAD 0 - Ta instrukcja bytecode'u ponownie wczytuje referencję do tablicy zmiennych lokalnych o indeksie 0 na stos.
+    ILOAD 3 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 3 na stos.
+    ICONST_1 - Ta instrukcja bytecode'u umieszcza stałą wartość 1 na stosie.
+    IADD - Ta instrukcja bytecode'u wykonuje dodawanie na dwóch wartościach ze stosu (wartość zmiennej lokalnej 3 i 1) i umieszcza wynik na stosie.
+    IALOAD - Ta instrukcja bytecode'u wczytuje wartość z tablicy na podstawie indeksu (wartość ze stosu) i umieszcza ją na stosie. W tym przypadku oznacza to wczytanie elementu z tablicy o indeksie wskazywanym przez wynik dodawania.
+    IF_ICMPLE L8 - Ta instrukcja bytecode'u porównuje dwie wartości ze stosu (wartość wczytana z tablicy na podstawie indeksu i wartość wczytana z tablicy na podstawie wyniku dodawania). Jeśli pierwsza wartość jest mniejsza lub równa drugiej, skacze do etykiety L8.
+   L9 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 7 L9 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 7 w pliku źródłowym.
+    ALOAD 0 - Ta instrukcja bytecode'u wczytuje referencję do tablicy zmiennych lokalnych o indeksie 0 na stos.
+    ILOAD 3 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 3 na stos.
+    IALOAD - Ta instrukcja bytecode'u wczytuje wartość z tablicy na podstawie indeksu (wartość ze stosu) i umieszcza ją na stosie. W tym przypadku oznacza to wczytanie elementu z tablicy o indeksie wskazywanym przez wartość zmiennej lokalnej 3.
+    ISTORE 4 - Ta instrukcja bytecode'u zapisuje wartość ze stosu (wartość wczytana z tablicy) do zmiennej lokalnej o indeksie 4.
+   L10 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 8 L10 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 8 w pliku źródłowym.
+    ALOAD 0 - Ta instrukcja bytecode'u wczytuje referencję do tablicy zmiennych lokalnych o indeksie 0 (pierwszy argument metody, czyli tablica) na stos.
+    ILOAD 3 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 3 na stos.
+    ALOAD 0 - Ta instrukcja bytecode'u ponownie wczytuje referencję do tablicy zmiennych lokalnych o indeksie 0 na stos.
+    ILOAD 3 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 3 na stos.
+    ICONST_1  - Ta instrukcja bytecode'u umieszcza stałą wartość 1 na stosie.
+    IADD - Ta instrukcja bytecode'u wykonuje dodawanie na dwóch wartościach ze stosu (wartość zmiennej lokalnej 3 i 1) i umieszcza wynik na stosie.
+    IALOAD - Ta instrukcja bytecode'u wczytuje wartość z tablicy na podstawie indeksu (wartość ze stosu) i umieszcza ją na stosie. W tym przypadku oznacza to wczytanie elementu z tablicy o indeksie wskazywanym przez wynik dodawania.
+    IASTORE - Ta instrukcja bytecode'u zapisuje wartość ze stosu (element wczytany z tablicy) do tablicy na podstawie indeksu (wartość ze stosu) i usuwa obie wartości ze stosu.
+   L11 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 9 L11 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 9 w pliku źródłowym.
+    ALOAD 0 - Ta instrukcja bytecode'u wczytuje referencję do tablicy zmiennych lokalnych o indeksie 0 na stos.
+    ILOAD 3 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 3 na stos.
+    ICONST_1 - Ta instrukcja bytecode'u umieszcza stałą wartość 1 na stosie.
+    IADD - Ta instrukcja bytecode'u wykonuje dodawanie na dwóch wartościach ze stosu (wartość zmiennej lokalnej 3 i 1) i umieszcza wynik na stosie.
+    ILOAD 4 - Ta instrukcja bytecode'u wczytuje wartość zmiennej lokalnej o indeksie 4 na stos.
+    IASTORE - Ta instrukcja bytecode'u zapisuje wartość ze stosu (wartość zmiennej lokalnej 4) do tablicy na podstawie indeksu (wartość ze stosu) i usuwa obie wartości ze stosu.
+   L8 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 5 L8 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 5 w pliku źródłowym.
+   FRAME SAME - Ta linijka bytecode'u wskazuje na stan stosu i zmiennych lokalnych w tym miejscu. "SAME" oznacza, że stan stosu i zmienne lokalne nie zmieniają się w porównaniu do poprzedniego stanu.
+    IINC 3 1 - Ta instrukcja bytecode'u inkrementuje wartość zmiennej lokalnej o indeksie 3 (inkrementacja zmiennej o 1).
+    GOTO L5 - Ta instrukcja bytecode'u skacze do etykiety L5.
+   L6 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 4 L6 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 4 w pliku źródłowym.
+   FRAME CHOP 1 - Ta linijka bytecode'u wskazuje na stan stosu i zmiennych lokalnych w tym miejscu. "CHOP 1" oznacza, że stan stosu zmniejszył się o 1 element (usunięcie wartości ze stosu).
+    IINC 2 1 - Ta instrukcja bytecode'u inkrementuje wartość zmiennej lokalnej o indeksie 2 (inkrementacja zmiennej o 1).
+    GOTO L2 - Ta instrukcja bytecode'u skacze do etykiety L2.
+   L3 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 13 L3 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 13 w pliku źródłowym.
+   FRAME CHOP 1 - Ta linijka bytecode'u wskazuje na stan stosu i zmiennych lokalnych w tym miejscu. "CHOP 1" oznacza, że stan stosu zmniejszył się o 1 element (usunięcie wartości ze stosu).
+    RETURN - Ta instrukcja bytecode'u kończy wykonanie metody i zwraca kontrolę.
+   L12 - Etykieta oznaczająca kolejny blok kodu.
+    LOCALVARIABLE temp I L10 L8 4 - Ta linijka bytecode'u definiuje zmienną lokalną o nazwie "temp" (typu int) o indeksie 4. Zakres ważności tej zmiennej lokalnej obejmuje od etykiety L10 do L8.
+    LOCALVARIABLE j I L5 L6 3 - Ta linijka bytecode'u definiuje zmienną lokalną o nazwie "j" (typu int) o indeksie 3. Zakres ważności tej zmiennej lokalnej obejmuje od etykiety L5 do L6.
+    LOCALVARIABLE i I L2 L3 2 - Ta linijka bytecode'u definiuje zmienną lokalną o nazwie "i" (typu int) o indeksie 2. Zakres ważności tej zmiennej lokalnej obejmuje od etykiety L2 do L3.
+    LOCALVARIABLE array [I L0 L12 0 - Ta linijka bytecode'u definiuje zmienną lokalną o nazwie "array" (typu int[]) o indeksie 0. Zakres ważności tej zmiennej lokalnej obejmuje od etykiety L0 do L12.
+    LOCALVARIABLE n I L1 L12 1 - Ta linijka bytecode'u definiuje zmienną lokalną o nazwie "n" (typu int) o indeksie 1. Zakres ważności tej zmiennej lokalnej obejmuje od etykiety L1 do L12.
+    MAXSTACK = 5 - Ta linijka bytecode'u wskazuje maksymalną głębokość stosu dla metody.
+    MAXLOCALS = 5 - Ta linijka bytecode'u wskazuje maksymalną liczbę zmiennych lokalnych dla metody.
+
+  // access flags 0x9 - Ta linijka bytecode'u wskazuje na flagi dostępu do metody. W tym przypadku flaga 0x9 oznacza, że metoda jest publiczna i statyczna.
+  public static main([Ljava/lang/String;)V throws java/lang/Exception - Ta linijka bytecode'u definiuje metodę main jako publiczną (public), statyczną (static), zwracającą wartość typu void (V) oraz przyjmującą jeden argument typu String[] ([Ljava/lang/String;). Również wskazuje, że metoda może zgłaszać wyjątek typu Exception.
+   L0 - Etykieta oznaczająca kolejny blok kodu.
+    LINENUMBER 15 L0 - Ta linijka bytecode'u wskazuje, że linia kodu źródłowego, która rozpoczyna się tutaj, odpowiada linii 15 w pliku źródłowym.
+    RETURN - Ta instrukcja bytecode'u kończy wykonanie metody i zwraca kontrolę.
+   L1 - Etykieta oznaczająca kolejny blok kodu.
+    LOCALVARIABLE args [Ljava/lang/String; L0 L1 0 - Ta linijka bytecode'u definiuje zmienną lokalną o nazwie "args" (typu String[]) o indeksie 0. Zakres ważności tej zmiennej lokalnej obejmuje od etykiety L0 do L1.
+    MAXSTACK = 0 - Ta linijka bytecode'u wskazuje maksymalną głębokość stosu dla metody.
+    MAXLOCALS = 1 - Ta linijka bytecode'u wskazuje maksymalną liczbę zmiennych lokalnych dla metody.
+}
